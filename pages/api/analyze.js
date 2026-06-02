@@ -17,6 +17,7 @@ export default async function handler(req, res) {
   });
 
   const data = await response.json();
-  const text = data.choices?.[0]?.message?.content || "";
+ const text = data.choices?.[0]?.message?.content || data.error?.message || "No se recibió respuesta de la IA.";
+ 
   res.status(200).json({ text });
 }
