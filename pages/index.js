@@ -140,7 +140,41 @@ export default function AnalizadorHambre() {
               <p style={{ textAlign: "center", color: "#aaa", fontSize: "0.75rem", marginTop: "1.5rem" }}>Este análisis es psicoeducativo y no reemplaza la atención clínica.</p>
             </div>
           )}
-        </div>
+        </div><div style={{ textAlign: "center", marginTop: "1.5rem" }}>
+<a
+href="https://chat.whatsapp.com/BObolIlpq4QFnbf0M4hrTC?mode=gi_t"
+target="_blank"
+rel="noopener noreferrer"
+style={{
+display: "inline-block",
+backgroundColor: "#25D366",
+color: "white",
+padding: "12px 20px",
+borderRadius: "8px",
+textDecoration: "none",
+margin: "5px"
+}}
+>
+Unirme a la Comunidad WhatsApp
+</a>
+
+<a
+href="https://open.spotify.com/show/4DjJaU8VyzWClwNeJWqF6R?si=S9ERtzNXQKed4oA4PzhajA"
+target="_blank"
+rel="noopener noreferrer"
+style={{
+display: "inline-block",
+backgroundColor: "#1DB954",
+color: "white",
+padding: "12px 20px",
+borderRadius: "8px",
+textDecoration: "none",
+margin: "5px"
+}}
+>
+Escuchar Podcast
+</a>
+</div>
         <p style={{ textAlign: "center", color: COLORS.moss, fontSize: "0.7rem", marginTop: "1.5rem", letterSpacing: "0.1em" }}>PSICOLOGÍA DE LA ALIMENTACIÓN · HERRAMIENTA DE AUTOCONOCIMIENTO</p>
       </div>
     </div>
