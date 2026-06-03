@@ -127,14 +127,61 @@ export default function AnalizadorHambre() {
               <p style={{ color: "#999", fontSize: "0.85rem" }}>Esto toma unos segundos</p>
             </div>
           )}
+        ```jsx
           {step === "resultado" && (
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
                 <div style={{ width: "3px", height: "2rem", backgroundColor: COLORS.terracotta }} />
                 <h2 style={{ fontSize: "1.1rem", color: COLORS.charcoal, fontWeight: "normal", margin: 0 }}>Tu análisis</h2>
               </div>
-              <div style={{ backgroundColor: COLORS.cream, padding: "1.5rem", borderLeft: `3px solid ${COLORS.lightMoss}`, marginBottom: "2rem", fontSize: "0.92rem", color: COLORS.charcoal }}>{formatAnalysis(analysis)}</div>
-              <div style={{ textAlign: "center" }}>
-                <button onClick={restart} style={{ backgroundColor: "transparent", color: COLORS.terracotta, border: `1px solid ${COLORS.terracotta}`, padding: "0.75rem 1.75rem", fontSize: "0.85rem", cursor: "pointer", borderRadius: "1px", fontFamily: "inherit" }}>Registrar otro episodio</button>
 
-  
+              <div style={{ backgroundColor: COLORS.cream, padding: "1.5rem", borderLeft: `3px solid ${COLORS.lightMoss}`, marginBottom: "2rem", fontSize: "0.92rem", color: COLORS.charcoal }}>
+                {formatAnalysis(analysis)}
+              </div>
+
+              <div style={{ textAlign: "center" }}>
+                <button onClick={restart} style={{ backgroundColor: "transparent", color: COLORS.terracotta, border: `1px solid ${COLORS.terracotta}`, padding: "0.75rem 1.75rem", fontSize: "0.85rem", cursor: "pointer", borderRadius: "1px", fontFamily: "inherit" }}>
+                  Registrar otro episodio
+                </button>
+              </div>
+
+              <div style={{ marginTop: "2rem", padding: "1.5rem", backgroundColor: "#f4fbfb", borderRadius: "15px", textAlign: "center" }}>
+                <h3 style={{ color: "#2F6F73" }}>💙 Sigue acompañada en este proceso</h3>
+
+                <p style={{ color: "#555", lineHeight: "1.6" }}>
+                  Si este análisis te ayudó a comprender mejor tu relación con la comida,
+                  te invito a unirte a mi comunidad gratuita <strong>Entre el Plato y Yo</strong>.
+                </p>
+
+                <a href="https://chat.whatsapp.com/BObolIlpq4QFnbf0M4hrTC?mode=gi_t" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", backgroundColor: "#25D366", color: "white", padding: "12px 24px", borderRadius: "10px", textDecoration: "none", fontWeight: "bold", marginTop: "10px" }}>
+                  Unirme a la Comunidad WhatsApp
+                </a>
+
+                <div style={{ marginTop: "30px" }}>
+                  <h3 style={{ color: "#2F6F73" }}>🎙️ Escucha el Podcast</h3>
+
+                  <p style={{ color: "#555" }}>
+                    Más Allá del Plato con Kidda Lucas
+                  </p>
+
+                  <a href="https://open.spotify.com/show/4DjJaU8VyzWClwNeJWqF6R?si=Y6K_Ymg8TXus8lLplblsaA" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", backgroundColor: "#1DB954", color: "white", padding: "12px 24px", borderRadius: "10px", textDecoration: "none", fontWeight: "bold" }}>
+                    Escuchar Podcast
+                  </a>
+                </div>
+              </div>
+
+              <p style={{ textAlign: "center", color: "#aaa", fontSize: "0.75rem", marginTop: "1.5rem" }}>
+                Este análisis es psicoeducativo y no reemplaza la atención clínica.
+              </p>
+            </div>
+          )}
+        </div>
+
+        <p style={{ textAlign: "center", color: COLORS.moss, fontSize: "0.7rem", marginTop: "1.5rem", letterSpacing: "0.1em" }}>
+          PSICOLOGÍA DE LA ALIMENTACIÓN · HERRAMIENTA DE AUTOCONOCIMIENTO
+        </p>
+      </div>
+    </div>
+  );
+}
+```
