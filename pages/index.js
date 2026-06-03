@@ -141,40 +141,83 @@ export default function AnalizadorHambre() {
             </div>
           )}
         </div><div style={{ textAlign: "center", marginTop: "1.5rem" }}>
-<a
-href="https://chat.whatsapp.com/BObolIlpq4QFnbf0M4hrTC?mode=gi_t"
-target="_blank"
-rel="noopener noreferrer"
-style={{
-display: "inline-block",
-backgroundColor: "#25D366",
-color: "white",
-padding: "12px 20px",
-borderRadius: "8px",
-textDecoration: "none",
-margin: "5px"
-}}
->
-Unirme a la Comunidad WhatsApp
-</a>
-
-<a
-href="https://open.spotify.com/show/4DjJaU8VyzWClwNeJWqF6R?si=S9ERtzNXQKed4oA4PzhajA"
-target="_blank"
-rel="noopener noreferrer"
-style={{
-display: "inline-block",
-backgroundColor: "#1DB954",
-color: "white",
-padding: "12px 20px",
-borderRadius: "8px",
-textDecoration: "none",
-margin: "5px"
-}}
->
-Escuchar Podcast
-</a>
 </div>
+```jsx
+<div
+  style={{
+    marginTop: "40px",
+    padding: "25px",
+    backgroundColor: "#f4fbfb",
+    borderRadius: "15px",
+    textAlign: "center"
+  }}
+>
+
+  <h3 style={{ color: "#2F6F73" }}>
+    💙 Sigue acompañada en este proceso
+  </h3>
+
+  <p style={{
+    color: "#555",
+    lineHeight: "1.6"
+  }}>
+    Si este análisis te ayudó a comprender mejor tu relación con la comida,
+    te invito a unirte a mi comunidad gratuita
+    <strong> Entre el Plato y Yo</strong>.
+  </p>
+
+  <a
+    href="https://chat.whatsapp.com/BObolIlpq4QFnbf0M4hrTC?mode=gi_t"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      backgroundColor: "#25D366",
+      color: "white",
+      padding: "12px 24px",
+      borderRadius: "10px",
+      textDecoration: "none",
+      fontWeight: "bold",
+      marginTop: "10px"
+    }}
+  >
+    Unirme a la Comunidad WhatsApp
+  </a>
+
+  <div style={{ marginTop: "30px" }}>
+
+    <h3 style={{ color: "#2F6F73" }}>
+      🎙️ Escucha el Podcast
+    </h3>
+
+    <p style={{
+      color: "#555",
+      lineHeight: "1.6"
+    }}>
+      Más Allá del Plato con Kidda Lucas
+    </p>
+
+    <a
+      href="https://open.spotify.com/show/4DjJaU8VyzWClwNeJWqF6R?si=Y6K_Ymg8TXus8lLplblsaA"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: "inline-block",
+        backgroundColor: "#1DB954",
+        color: "white",
+        padding: "12px 24px",
+        borderRadius: "10px",
+        textDecoration: "none",
+        fontWeight: "bold"
+      }}
+    >
+      Escuchar Podcast
+    </a>
+
+  </div>
+
+</div>
+            
         <p style={{ textAlign: "center", color: COLORS.moss, fontSize: "0.7rem", marginTop: "1.5rem", letterSpacing: "0.1em" }}>PSICOLOGÍA DE LA ALIMENTACIÓN · HERRAMIENTA DE AUTOCONOCIMIENTO</p>
       </div>
     </div>
