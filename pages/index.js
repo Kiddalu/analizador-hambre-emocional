@@ -136,7 +136,6 @@ export default function AnalizadorHambre() {
               <div style={{ backgroundColor: COLORS.cream, padding: "1.5rem", borderLeft: `3px solid ${COLORS.lightMoss}`, marginBottom: "2rem", fontSize: "0.92rem", color: COLORS.charcoal }}>{formatAnalysis(analysis)}</div>
               <div style={{ textAlign: "center" }}>
                 <button onClick={restart} style={{ backgroundColor: "transparent", color: COLORS.terracotta, border: `1px solid ${COLORS.terracotta}`, padding: "0.75rem 1.75rem", fontSize: "0.85rem", cursor: "pointer", borderRadius: "1px", fontFamily: "inherit" }}>Registrar otro episodio</button>
-          
 <div
   style={{
     marginTop: "40px",
