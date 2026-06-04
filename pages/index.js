@@ -127,7 +127,7 @@ export default function AnalizadorHambre() {
               <p style={{ color: "#999", fontSize: "0.85rem" }}>Esto toma unos segundos</p>
             </div>
           )}
-        ```jsx
+        
           {step === "resultado" && (
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
