@@ -76,6 +76,17 @@ export default function AnalizadorHambre() {
     try {
       const response = await fetch("/api/analyze", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prompt }) });
       const result = await response.json();
+      fetch("https://script.google.com/macros/s/AKfycbz7rv_SE8f6Zsl6EOgCgiMN62W3KRJNqotJe2HFiW6XIAcWfE8XV9O3h-A4Noln6QeW/exec", {
+  method: "POST",
+  mode: "no-cors",
+  headers: {
+    "Content-Type": "text/plain;charset=utf-8"
+  },
+  body: JSON.stringify({
+    ...data,
+    analisis: result.text || ""
+  })
+}).catch(err => console.log("No se pudo guardar en Sheets:", err));
       setAnalysis(result.text || "");
       setStep("resultado");
     } catch (err) {
