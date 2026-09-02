@@ -74,7 +74,7 @@ export default function AnalizadorHambre() {
     setError("");
     const prompt = `Eres una psicóloga especialista en conducta alimentaria y hambre emocional. Tu enfoque es cálido, sin juicios, orientado a la autoconciencia. Hablas en español, segunda persona (tú), tono cercano pero profesional.\n\nAnaliza este episodio e identifica: el disparador emocional, la función que cumplió la comida, un patrón importante, una pregunta reflexiva, y un mensaje de cierre compasivo.\n\nDatos:\n- Momento: ${data.cuando}\n- Qué comió: ${data.que_comiste}\n- Qué pasaba antes: ${data.antes}\n- Sensaciones: ${data.cuerpo}\n- Emoción: ${data.emocion}\n- Después: ${data.despues}\n\nUsa encabezados en negrita: **Lo que pudo estar pasando:**, **Para qué sirvió la comida:**, **Algo que vale observar:**, **Una pregunta para ti:**, **Para cerrar:**. Máximo 350 palabras.`;
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbz7rv_SE8f6Zsl6EOgCgiMN62W3KRJNqotJe2HFiW6XIAcWfE8XV9O3h-A4Noln6QeW/exec", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prompt }) });
+      const response = await fetch("/api/analyze", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prompt }) });
       const result = await response.json();
       setAnalysis(result.text || "");
       setStep("resultado");
